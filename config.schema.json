@@ -1,0 +1,80 @@
+{
+  "pluginAlias": "AutoResetContactTrigger",
+  "pluginType": "platform",
+  "singular": false,
+  "headerDisplay": "Creates one Homebridge accessory with a Trigger switch and an auto-resetting Contact Sensor.",
+  "footerDisplay": "Use the Trigger switch in automations. Enable notifications on the Contact Sensor in Apple Home.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Platform Name",
+        "type": "string",
+        "default": "Auto Reset Contact Trigger",
+        "required": true
+      },
+      "accessories": {
+        "title": "Accessories",
+        "type": "array",
+        "items": {
+          "title": "Accessory",
+          "type": "object",
+          "properties": {
+            "name": {
+              "title": "Accessory Name",
+              "type": "string",
+              "default": "Alarm Not Set Alert",
+              "required": true
+            },
+            "triggerName": {
+              "title": "Trigger Switch Name",
+              "type": "string",
+              "default": "Trigger"
+            },
+            "sensorName": {
+              "title": "Contact Sensor Name",
+              "type": "string",
+              "default": "Alarm Not Set Alert"
+            },
+            "resetAfterSeconds": {
+              "title": "Reset After Seconds",
+              "type": "integer",
+              "default": 10,
+              "minimum": 1
+            },
+            "triggeredState": {
+              "title": "Triggered Sensor State",
+              "type": "string",
+              "default": "closed",
+              "oneOf": [
+                {
+                  "title": "Closed",
+                  "enum": ["closed"]
+                },
+                {
+                  "title": "Open",
+                  "enum": ["open"]
+                }
+              ]
+            },
+            "initialState": {
+              "title": "Initial Sensor State",
+              "type": "string",
+              "default": "open",
+              "oneOf": [
+                {
+                  "title": "Open",
+                  "enum": ["open"]
+                },
+                {
+                  "title": "Closed",
+                  "enum": ["closed"]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

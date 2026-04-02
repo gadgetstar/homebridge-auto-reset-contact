@@ -1,0 +1,42 @@
+{
+  "name": "homebridge-auto-reset-contact",
+  "version": "1.2.0",
+  "description": "Single-accessory Homebridge plugin with a writable trigger switch and auto-resetting contact sensor",
+  "displayName": "Auto Reset Contact",
+  "main": "index.js",
+  "author": "ChatGPT & Mike Bradshaw",
+  "license": "MIT",
+  "keywords": [
+    "homebridge-plugin",
+    "homekit",
+    "contact-sensor",
+    "switch",
+    "automation",
+    "notification"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "homebridge": ">=1.8.0"
+  },
+  "peerDependencies": {
+    "homebridge": ">=1.8.0"
+  },
+  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/homebridge-auto-reset-contact#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/homebridge-auto-reset-contact.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_GITHUB_USERNAME/homebridge-auto-reset-contact/issues"
+  },
+  "files": [
+    "index.js",
+    "config.schema.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "lint": "node -e \"require('./index.js')\"",
+    "prepare": "npm pack >/dev/null"
+  }
+}
