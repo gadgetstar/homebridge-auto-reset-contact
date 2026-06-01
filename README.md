@@ -48,6 +48,7 @@ Then restart Homebridge.
 ```bash
 cd /var/lib/homebridge
 npm install github:gadgetstar/homebridge-auto-reset-contact
+```
 
 ## Configuration
 
