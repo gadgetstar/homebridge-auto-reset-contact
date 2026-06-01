@@ -44,6 +44,11 @@ sudo npm install /path/to/homebridge-auto-reset-contact-1.2.0.tgz
 
 Then restart Homebridge.
 
+### From github install
+'''bash
+cd /var/lib/homebridge
+npm install github:gadgetstar/homebridge-auto-reset-contact
+
 ## Configuration
 
 ### Example config
